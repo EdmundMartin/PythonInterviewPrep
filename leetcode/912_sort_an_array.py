@@ -23,5 +23,5 @@ class Solution:
         return self.quick_sort(smaller) + partition + self.quick_sort(larger)
 
     def sortArray(self, nums: List[int]) -> List[int]:
-        shuffle(nums) # Avoids quicksorts worse time complexity
+        shuffle(nums)  # Avoids quicksorts worse time complexity
         return self.quick_sort(nums)
