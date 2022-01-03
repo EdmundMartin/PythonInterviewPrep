@@ -1,5 +1,3 @@
-
-
 def run_length_encoding(target_str: str):
     new_string = ""
     prev = target_str[0]
@@ -17,7 +15,7 @@ def run_length_encoding(target_str: str):
     return new_string
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_str: str = "AAAAAAAAAAAAAAAAAAAAAHHHHCCCCDDDDPPPSL"
     result = run_length_encoding(test_str)
     print(result)

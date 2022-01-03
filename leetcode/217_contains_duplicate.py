@@ -7,12 +7,12 @@ class Solution:
         prev = nums[0]
         for num in nums[1:]:
             if num == prev:
-                return 
+                return
             prev = num
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     problem_input = [1, 2, 3, 1]
     result = Solution().containsDuplicate(problem_input)
     print(result)

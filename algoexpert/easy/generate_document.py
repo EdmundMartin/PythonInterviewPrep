@@ -13,7 +13,7 @@ def generate_document(characters: str, document: str) -> bool:
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_document = "Edmund Martin"
     test_chars_true = "dmundE artinM"
     test_chars_false = "dmunde artin"

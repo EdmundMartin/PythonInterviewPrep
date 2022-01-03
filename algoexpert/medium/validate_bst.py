@@ -3,7 +3,9 @@ from typing import Union
 from algoexpert.utils.binary_tree import BinaryTree
 
 
-def validation_helper(tree: BinaryTree, min_value: Union[float, int], max_value: Union[float, int]) -> bool:
+def validation_helper(
+    tree: BinaryTree, min_value: Union[float, int], max_value: Union[float, int]
+) -> bool:
     if tree is None:
         return True
     if tree.value < min_value or tree.value >= max_value:
@@ -14,10 +16,10 @@ def validation_helper(tree: BinaryTree, min_value: Union[float, int], max_value:
 
 
 def validate_bst(tree: BinaryTree) -> bool:
-    return validation_helper(tree, float('-inf'), float('inf'))
+    return validation_helper(tree, float("-inf"), float("inf"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     valid_tree = BinaryTree(10)
     valid_tree.left = BinaryTree(7)
     valid_tree.left.left = BinaryTree(6)

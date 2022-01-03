@@ -15,7 +15,7 @@ def group_anagrams(words: List[str]) -> List[List[str]]:
     return output
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_words = ["yo", "oy", "act", "tac"]
     result = group_anagrams(test_words)
     assert result == [["yo", "oy"], ["act", "tac"]]

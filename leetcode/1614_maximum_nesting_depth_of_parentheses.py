@@ -1,5 +1,3 @@
-
-
 class Solution:
     def maxDepth(self, s: str) -> int:
         starting_paren = "("
@@ -15,7 +13,7 @@ class Solution:
         return max_depth
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = "(1+(2*3)+((8)/4))+1"
     result = Solution().maxDepth(test_input)
     print(result)

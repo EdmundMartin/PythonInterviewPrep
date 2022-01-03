@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class Node:
     def __init__(self, val=0, left=None, right=None, random=None):
         self.val = val

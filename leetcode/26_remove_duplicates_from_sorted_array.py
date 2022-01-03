@@ -13,7 +13,7 @@ class Solution:
         return slow + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
     result = Solution().removeDuplicates(test_array)
     assert result == 5

@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def peakIndexInMountainArray(self, arr: List[int]) -> int:
-        max_height = float('-inf')
+        max_height = float("-inf")
         max_idx = None
         for i in range(1, len(arr) - 1):
             peak = arr[i]
@@ -14,6 +14,6 @@ class Solution:
         return max_idx
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().peakIndexInMountainArray([0, 1, 0])
     print(result)

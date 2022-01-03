@@ -6,10 +6,12 @@ from algoexpert.utils.binary_tree import BinaryTree
 def node_depths(root: Optional[BinaryTree], depth: int) -> int:
     if root is None:
         return 0
-    return depth + node_depths(root.left, depth + 1) + node_depths(root.right, depth + 1)
+    return (
+        depth + node_depths(root.left, depth + 1) + node_depths(root.right, depth + 1)
+    )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = BinaryTree(10)
     root.left = BinaryTree(9)
     root.right = BinaryTree(11)

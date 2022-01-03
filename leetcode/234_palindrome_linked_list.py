@@ -65,7 +65,7 @@ class Solution:
         return previous
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = ListNode(1)
     root.next = ListNode(2)
     root.next.next = ListNode(2)

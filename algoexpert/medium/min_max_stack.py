@@ -1,6 +1,4 @@
-
 class MinMaxStack:
-
     def __init__(self):
         self.min_max_stack = []
         self.stack = []
@@ -26,4 +24,3 @@ class MinMaxStack:
 
     def get_max(self):
         return self.min_max_stack[len(self.min_max_stack) - 1]["max"]
-

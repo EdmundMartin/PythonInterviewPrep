@@ -2,11 +2,10 @@ from typing import Optional
 
 
 class BST:
-
     def __init__(self, value: int):
         self.value = value
-        self.left: Optional['BST'] = None
-        self.right: Optional['BST'] = None
+        self.left: Optional["BST"] = None
+        self.right: Optional["BST"] = None
 
 
 def find_closest(target: int, original: int, new_value: int) -> int:

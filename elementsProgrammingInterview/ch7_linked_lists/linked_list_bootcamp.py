@@ -2,8 +2,7 @@ from typing import Optional, List, Any
 
 
 class ListNode:
-
-    def __init__(self, data: int = 0, next: Optional['ListNode'] = None):
+    def __init__(self, data: int = 0, next: Optional["ListNode"] = None):
         self.next = next
         self.data = data
 

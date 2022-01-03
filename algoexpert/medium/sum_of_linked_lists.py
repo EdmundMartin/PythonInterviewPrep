@@ -1,4 +1,8 @@
-from algoexpert.utils.linked_list import LinkedList, linked_list_from_list, linked_list_to_python_list
+from algoexpert.utils.linked_list import (
+    LinkedList,
+    linked_list_from_list,
+    linked_list_to_python_list,
+)
 
 
 def sum_of_linked_lists(list_one: LinkedList, list_two: LinkedList) -> LinkedList:
@@ -20,7 +24,7 @@ def sum_of_linked_lists(list_one: LinkedList, list_two: LinkedList) -> LinkedLis
     return dummy_node.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_list_one = linked_list_from_list([0, 2, 2])
     test_list_two = linked_list_from_list([1, 1, 1])
 

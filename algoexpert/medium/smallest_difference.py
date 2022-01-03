@@ -5,7 +5,7 @@ def smallest_difference(first: List[int], second: List[int]) -> List[int]:
     first.sort()
     second.sort()
     first_idx, second_idx = 0, 0
-    smallest_diff = float('inf')
+    smallest_diff = float("inf")
     current_pair = None
     while first_idx < len(first) and second_idx < len(second):
         difference = abs(first[first_idx] - second[second_idx])
@@ -21,6 +21,6 @@ def smallest_difference(first: List[int], second: List[int]) -> List[int]:
     return current_pair
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = smallest_difference([-1, 5, 10, 20, 28, 3], [26, 134, 135, 15, 17])
     assert result == [28, 26]

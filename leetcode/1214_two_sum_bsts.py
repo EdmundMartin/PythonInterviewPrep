@@ -11,7 +11,6 @@ class TreeNode:
 # Runtime: 60 ms, faster than 97.22% of Python3 online submissions for Two Sum BSTs.
 # Memory Usage: 20.1 MB, less than 53.75% of Python3 online submissions for Two Sum BSTs.
 class Solution:
-
     def in_order_traversal(self, node: Optional[TreeNode], values):
         if not node:
             return
@@ -19,7 +18,9 @@ class Solution:
         values.add(node.val)
         self.in_order_traversal(node.right, values)
 
-    def twoSumBSTs(self, root1: Optional[TreeNode], root2: Optional[TreeNode], target: int) -> bool:
+    def twoSumBSTs(
+        self, root1: Optional[TreeNode], root2: Optional[TreeNode], target: int
+    ) -> bool:
 
         first_results = set()
         self.in_order_traversal(root1, first_results)

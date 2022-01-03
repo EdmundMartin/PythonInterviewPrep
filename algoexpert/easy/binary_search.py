@@ -14,10 +14,10 @@ def helper(array: List[int], target: int, left: int, right: int) -> int:
 
 
 def binary_search(array: List[int], target: int) -> int:
-    return helper(array, target, 0, len(array)-1)
+    return helper(array, target, 0, len(array) - 1)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [0, 1, 21, 33, 45, 61, 71, 72, 73]
     test_target = 33
     result = binary_search(test_array, test_target)

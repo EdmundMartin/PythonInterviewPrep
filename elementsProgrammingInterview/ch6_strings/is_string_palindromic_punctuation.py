@@ -1,5 +1,3 @@
-
-
 def is_palindrome_punctuation(s: str) -> bool:
     i, j = 0, len(s) - 1
     while i < j:

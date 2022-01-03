@@ -30,7 +30,7 @@ def _in_order_traverse(tree: BinaryTree, values: List[int]) -> None:
     _in_order_traverse(tree.right, values)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     tree = BinaryTree(10)
     tree.left = BinaryTree(7)
     tree.right = BinaryTree(12)

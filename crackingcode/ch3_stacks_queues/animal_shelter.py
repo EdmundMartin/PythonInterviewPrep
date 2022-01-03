@@ -8,7 +8,6 @@ from typing import Optional
 
 
 class Animal:
-
     def __init__(self, name: str):
         self.order: Optional[int] = None
         self.name: str = name
@@ -19,7 +18,7 @@ class Animal:
     def get_order(self) -> int:
         return self.order
 
-    def is_older_than(self, other: 'Animal'):
+    def is_older_than(self, other: "Animal"):
         return self.order < other.order
 
 
@@ -32,14 +31,12 @@ class Cat(Animal):
 
 
 class LinkedListNode:
-
     def __init__(self, value: Animal):
         self.value = value
         self.next = None
 
 
 class AnimalLinkedList:
-
     def __init__(self):
         self.head: Optional[LinkedListNode] = None
         self.size: int = 0
@@ -69,7 +66,6 @@ class AnimalLinkedList:
 
 
 class AnimalQueue:
-
     def __init__(self):
         self.dogs: Optional[AnimalLinkedList] = AnimalLinkedList()
         self.cats: Optional[AnimalLinkedList] = AnimalLinkedList()

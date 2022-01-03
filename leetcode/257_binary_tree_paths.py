@@ -11,7 +11,6 @@ class TreeNode:
 # Runtime: 32 ms, faster than 72.04% of Python3 online submissions for Binary Tree Paths.
 # Memory Usage: 14.2 MB, less than 84.54% of Python3 online submissions for Binary Tree Paths.
 class Solution:
-
     def clean_paths(self, paths: List[List[int]]):
         cleaned_paths = []
         for path in paths:
@@ -37,7 +36,7 @@ class Solution:
         return self.clean_paths(all_paths)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.left.right = TreeNode(5)

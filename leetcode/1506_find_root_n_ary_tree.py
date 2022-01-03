@@ -10,7 +10,7 @@ class Node:
 # Runtime: 140 ms, faster than 85.54% of Python3 online submissions for Find Root of N-Ary Tree.
 # Memory Usage: 24.9 MB, less than 50.00% of Python3 online submissions for Find Root of N-Ary Tree.
 class Solution:
-    def findRoot(self, tree: List['Node']) -> 'Node':
+    def findRoot(self, tree: List["Node"]) -> "Node":
         no_children = {}
         is_child = set()
         for node in tree:

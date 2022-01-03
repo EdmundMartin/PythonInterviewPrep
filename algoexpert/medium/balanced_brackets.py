@@ -1,5 +1,3 @@
-
-
 def balanced_brackets(string: str) -> bool:
     opening_brackets = {"(", "{", "["}
     closing_brackets = {")", "}", "]"}
@@ -18,7 +16,7 @@ def balanced_brackets(string: str) -> bool:
     return len(stack) == 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     valid_parans = "((([])))"
     invalid_parans = "(())[}[]}"
 

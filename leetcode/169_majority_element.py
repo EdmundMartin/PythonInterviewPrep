@@ -21,7 +21,7 @@ class Solution:
                 current_count = 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().majorityElement([3, 2, 3])
     assert result == 3
 

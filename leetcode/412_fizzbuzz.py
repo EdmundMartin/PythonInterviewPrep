@@ -20,11 +20,9 @@ class Solution:
         return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     results = Solution().fizzBuzz(3)
     assert results == ["1", "2", "Fizz"]
 
     results = Solution().fizzBuzz(5)
     assert results == ["1", "2", "Fizz", "4", "Buzz"]
-
-

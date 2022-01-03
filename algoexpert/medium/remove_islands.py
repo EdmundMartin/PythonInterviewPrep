@@ -27,7 +27,9 @@ def remove_islands(matrix: List[List[int]]) -> List[List[int]]:
     return matrix
 
 
-def find_locations_connected_to_border(matrix, start_row, start_col, connected_to_border):
+def find_locations_connected_to_border(
+    matrix, start_row, start_col, connected_to_border
+):
     stack = [(start_row, start_col)]
 
     while len(stack) > 0:
@@ -67,14 +69,14 @@ def get_neighbors(matrix, row, col):
     return neighbors
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [
         [1, 0, 0, 0, 0, 0],
         [0, 1, 0, 1, 1, 1],
         [0, 0, 1, 0, 1, 0],
         [1, 1, 0, 0, 1, 0],
         [1, 0, 1, 1, 0, 0],
-        [1, 0, 0, 0, 0, 1]
+        [1, 0, 0, 0, 0, 1],
     ]
     result = remove_islands(test_array)
     expected = [

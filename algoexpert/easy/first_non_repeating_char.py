@@ -12,7 +12,7 @@ def first_non_repeating_char(target: str) -> int:
     return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_str: str = "abcdcaf"
     result = first_non_repeating_char(test_str)
     assert 1 == result

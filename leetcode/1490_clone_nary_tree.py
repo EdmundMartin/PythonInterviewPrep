@@ -1,5 +1,3 @@
-
-
 class Node:
     def __init__(self, val=None, children=None):
         self.val = val
@@ -13,7 +11,7 @@ class Solution:
 
         copy = Node(root.val)
 
-        def pre_order(node: 'Node', copy: 'Node'):
+        def pre_order(node: "Node", copy: "Node"):
             if not node:
                 return
 

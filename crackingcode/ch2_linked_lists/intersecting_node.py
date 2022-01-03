@@ -4,13 +4,14 @@ from crackingcode.ch2_linked_lists import SinglyLinkedNode
 
 
 class TailResult:
-
     def __init__(self, tail: Optional[SinglyLinkedNode], size: int):
         self.tail = tail
         self.size = size
 
 
-def find_intersection(first: SinglyLinkedNode, second: SinglyLinkedNode) -> Optional[SinglyLinkedNode]:
+def find_intersection(
+    first: SinglyLinkedNode, second: SinglyLinkedNode
+) -> Optional[SinglyLinkedNode]:
     if first is None or second is None:
         return None
 

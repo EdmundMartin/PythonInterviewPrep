@@ -1,5 +1,6 @@
 from typing import Optional
 
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -11,7 +12,7 @@ class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if root is None:
             return 0
-        max_depth = float('-inf')
+        max_depth = float("-inf")
         queue = [(root, 1)]
         while queue:
             current_node, depth = queue.pop(0)

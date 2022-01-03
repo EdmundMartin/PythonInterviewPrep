@@ -20,6 +20,6 @@ def three_number_sum(array: List[int], target_sum: int) -> List[List[int]]:
     return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     found = three_number_sum([12, 3, 1, 2, -6, 5, -8, 6], 0)
     assert found == [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]

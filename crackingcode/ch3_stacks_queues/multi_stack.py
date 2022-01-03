@@ -10,7 +10,9 @@ class FixedMultiStack:
 
     def __init__(self, stack_size: int) -> None:
         self.stack_capacity = stack_size
-        self.values: List[int] = [-999 for _ in range(stack_size * self.number_of_stacks)]
+        self.values: List[int] = [
+            -999 for _ in range(stack_size * self.number_of_stacks)
+        ]
         self.sizes: List[int] = [0 for _ in range(self.number_of_stacks)]
 
     def push(self, stack_number: int, value: int) -> None:

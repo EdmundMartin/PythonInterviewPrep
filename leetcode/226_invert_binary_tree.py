@@ -19,7 +19,10 @@ class Solution:
             current_node = queue.pop(0)
             if not current_node:
                 continue
-            current_node.left, current_node.right = current_node.right, current_node.left
+            current_node.left, current_node.right = (
+                current_node.right,
+                current_node.left,
+            )
             queue.append(current_node.left)
             queue.append(current_node.right)
         return root

@@ -10,7 +10,7 @@ def sorted_squared_array(array: List[int]) -> List:
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     array = [1, 2, 3, 5, 6, 8, 9]
     solution = sorted_squared_array(array)
     assert solution == [1, 4, 9, 25, 36, 64, 81]

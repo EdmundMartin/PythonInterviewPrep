@@ -1,5 +1,3 @@
-
-
 class BinaryTree:
     def __init__(self, value: int, left=None, right=None):
         self.value = value
@@ -27,5 +25,3 @@ def get_tree_info(tree: BinaryTree) -> TreeInfo:
     current_diameter = max(longest_path_through_root, max_diameter_so_far)
     current_height = 1 + max(left_tree_info.height, right_tree_info.height)
     return TreeInfo(current_diameter, current_height)
-
-

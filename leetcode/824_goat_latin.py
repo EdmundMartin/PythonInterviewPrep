@@ -1,9 +1,6 @@
-
-
 # Runtime: 28 ms, faster than 82.86% of Python3 online submissions for Goat Latin.
 # Memory Usage: 14.4 MB, less than 15.00% of Python3 online submissions for Goat Latin.
 class Solution:
-
     def split_sentence(self, sentence: str):
         output = []
         current_word = ""
@@ -34,9 +31,12 @@ class Solution:
         return " ".join(output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().toGoatLatin("I speak Goat Latin")
     assert result == "Imaa peaksmaaa oatGmaaaa atinLmaaaaa"
 
     result = Solution().toGoatLatin("The quick brown fox jumped over the lazy dog")
-    assert result == "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
+    assert (
+        result
+        == "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
+    )

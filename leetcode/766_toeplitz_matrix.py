@@ -16,7 +16,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
-    test_matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]
+if __name__ == "__main__":
+    test_matrix = [[1, 2, 3, 4], [5, 1, 2, 3], [9, 5, 1, 2]]
     result = Solution().isToeplitzMatrix(test_matrix)
     assert result is True

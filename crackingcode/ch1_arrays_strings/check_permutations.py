@@ -24,7 +24,7 @@ def permutation_char_counts(first: str, second: str) -> bool:
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert permutation_with_sort("dog", "god") is True
     assert permutation_with_sort("rita", "iitr") is False
 

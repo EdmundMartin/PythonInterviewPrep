@@ -1,6 +1,10 @@
 from typing import Optional
 
-from crackingcode.ch2_linked_lists.single_linked_list import SinglyLinkedNode, linked_list_to_python_list, linked_list_from_list
+from crackingcode.ch2_linked_lists.single_linked_list import (
+    SinglyLinkedNode,
+    linked_list_to_python_list,
+    linked_list_from_list,
+)
 
 
 def delete_duplicates(node: SinglyLinkedNode) -> SinglyLinkedNode:
@@ -31,7 +35,7 @@ def delete_duplicates_no_buffer(node: SinglyLinkedNode) -> SinglyLinkedNode:
     return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_list = linked_list_from_list([1, 1, 1, 3, 3, 4, 4, 5, 6, 7, 7, 8, 8])
     result = delete_duplicates(test_list)
     assert linked_list_to_python_list(result) == [1, 3, 4, 5, 6, 7, 8]

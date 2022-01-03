@@ -3,7 +3,6 @@ from random import shuffle
 
 
 class Solution:
-
     def quick_sort(self, nums: List[int]) -> List[int]:
         if len(nums) == 0:
             return []

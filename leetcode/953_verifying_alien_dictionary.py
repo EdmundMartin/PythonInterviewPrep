@@ -4,7 +4,6 @@ from typing import List, Dict
 # Runtime: 60 ms, faster than 6.15% of Python3 online submissions for Verifying an Alien Dictionary.
 # Memory Usage: 14.2 MB, less than 91.24% of Python3 online submissions for Verifying an Alien Dictionary.
 class Solution:
-
     def compare_words(self, first: str, second: str, order_mapping: Dict[str, int]):
         idx = 0
         while idx < len(first) and idx < len(second):
@@ -28,7 +27,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     words = ["hello", "leetcode"]
     order = "hlabcdefgijkmnopqrstuvwxyz"
     result = Solution().isAlienSorted(words, order)

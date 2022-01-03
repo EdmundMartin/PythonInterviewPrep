@@ -1,4 +1,3 @@
-
 class Solution:
     def calculateTime(self, keyboard: str, word: str) -> int:
         last_idx = 0
@@ -12,7 +11,7 @@ class Solution:
         return total_time
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = "abcdefghijklmnopqrstuvwxyz"
     result = Solution().calculateTime(test_input, "cba")
     assert result == 4

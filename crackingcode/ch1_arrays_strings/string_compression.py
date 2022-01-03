@@ -1,5 +1,3 @@
-
-
 def compress(target: str) -> str:
     compressed = ""
     count_repeating = 0
@@ -15,7 +13,7 @@ def compress(target: str) -> str:
     return target
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_string = "eeeddddaaaabcd"
     result = compress(test_string)
     assert result == "e3d4a4b1c1d1"

@@ -16,7 +16,7 @@ class Solution:
         return longest_prefix
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = ["flower", "flow", "flight"]
     result = Solution().longestCommonPrefix(test_input)
     assert result == "fl"

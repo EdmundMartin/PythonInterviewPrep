@@ -9,7 +9,6 @@ class TreeNode:
 
 
 class Solution:
-
     def post_order_helper(self, node: Optional[TreeNode], values: List[int]) -> None:
         if not node:
             return

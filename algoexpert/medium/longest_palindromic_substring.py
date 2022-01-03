@@ -1,4 +1,3 @@
-
 def is_palindrome(string: str) -> bool:
     left = 0
     right = len(string) - 1
@@ -14,7 +13,7 @@ def longest_substring_brute_force(string: str) -> str:
     longest = ""
     for i in range(len(string)):
         for j in range(i, len(string)):
-            substring = string[i:j + 1]
+            substring = string[i : j + 1]
             if len(substring) > len(longest) and is_palindrome(substring):
                 longest = substring
     return longest
@@ -36,4 +35,4 @@ def longest_palindromic_substring(string: str) -> str:
         even = get_longest_palindrome_from(string, i - 1, i)
         longest = max(odd, even, key=lambda x: x[1] - x[0])
         current_longest = max(longest, current_longest, key=lambda x: x[1] - x[0])
-    return string[current_longest[0]: current_longest[1]]
+    return string[current_longest[0] : current_longest[1]]

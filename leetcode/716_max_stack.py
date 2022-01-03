@@ -8,7 +8,6 @@ class StackItem:
 
 
 class MaxStack:
-
     def __init__(self):
         self.stack: List[StackItem] = []
 

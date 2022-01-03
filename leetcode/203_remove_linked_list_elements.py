@@ -28,7 +28,7 @@ class Solution:
         return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     front = ListNode(7)
     front.next = ListNode(7)
     front.next.next = ListNode(7)

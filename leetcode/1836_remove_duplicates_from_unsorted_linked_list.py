@@ -1,5 +1,6 @@
 from leetcode.utils import linked_list_to_python_list, linked_list_from_list
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -35,7 +36,7 @@ class Solution:
         return final_head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = linked_list_from_list([1, 2, 3, 2])
     result = Solution().deleteDuplicatesUnsorted(test_input)
     assert linked_list_to_python_list(result) == [1, 3]

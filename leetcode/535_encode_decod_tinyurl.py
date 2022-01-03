@@ -1,14 +1,10 @@
-
-
 class Codec:
-
     def __init__(self):
         self.buckets = [None] * 10_000
         self.length = 10_000
 
     def encode(self, longUrl: str) -> str:
-        """Encodes a URL to a shortened URL.
-        """
+        """Encodes a URL to a shortened URL."""
         url_hash = abs(hash(longUrl))
         url_bucket = url_hash % self.length
         if self.buckets[url_bucket] is None:
@@ -18,8 +14,7 @@ class Codec:
         return str(url_hash)
 
     def decode(self, shortUrl: str) -> str:
-        """Decodes a shortened URL to its original URL.
-        """
+        """Decodes a shortened URL to its original URL."""
         bucket = int(shortUrl) % self.length
         found_bucket = self.buckets[bucket]
         if len(found_bucket) == 1:
@@ -30,7 +25,7 @@ class Codec:
                 return url
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     codec = Codec()
     res = codec.encode("https://edmundmartin.com")
     print(res)

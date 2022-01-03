@@ -2,7 +2,6 @@ from typing import List
 
 
 class CustomOrder:
-
     def __init__(self, ordering_str: str):
         self.order = self._build_order(ordering_str)
 
@@ -13,11 +12,10 @@ class CustomOrder:
         return mapping
 
     def get_value(self, char: str):
-        return self.order.get(char, float('inf'))
+        return self.order.get(char, float("inf"))
 
 
 class Solution:
-
     def quicksort(self, array: List[str], order):
         if len(array) == 0:
             return []
@@ -35,7 +33,9 @@ class Solution:
                 larger.append(array[i])
             else:
                 smaller.append(array[i])
-        return self.quicksort(smaller, order) + partition + self.quicksort(larger, order)
+        return (
+            self.quicksort(smaller, order) + partition + self.quicksort(larger, order)
+        )
 
     def customSortString(self, order: str, s: str) -> str:
         order = CustomOrder(order)

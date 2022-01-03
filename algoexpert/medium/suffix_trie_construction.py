@@ -1,7 +1,4 @@
-
-
 class SuffixTrie:
-
     def __init__(self, string: str):
         self.root = {}
         self.end_symbol = "*"

@@ -14,6 +14,6 @@ def insertion_sort(array: List[int]) -> List[int]:
     return array
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = insertion_sort([24, 2, 242, 57, 243, 298, 56, 8, 9])
     assert result == [2, 8, 9, 24, 56, 57, 242, 243, 298]

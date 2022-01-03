@@ -5,7 +5,7 @@ from collections import defaultdict
 def build_freq_table(phrase: str) -> Dict[str, int]:
     counter = defaultdict(int)
     for char in phrase:
-        if char == ' ':
+        if char == " ":
             continue
         counter[char] += 1
     return counter
@@ -27,8 +27,8 @@ def palindrome_permutation_hash_table(phrase: str) -> bool:
 
 
 def get_char_value(char: str) -> int:
-    a = ord('a')
-    z = ord('z')
+    a = ord("a")
+    z = ord("z")
     val = ord(char)
     if a <= val <= z:
         return val - a
@@ -37,7 +37,7 @@ def get_char_value(char: str) -> int:
 
 def palindrome_permutation_optimized(phrase: str) -> bool:
     count_odd = 0
-    table = [0 for _ in range(ord('z') - ord('a') + 1)]
+    table = [0 for _ in range(ord("z") - ord("a") + 1)]
     for char in phrase:
         char_num = get_char_value(char)
         if char_num != -1:
@@ -49,7 +49,7 @@ def palindrome_permutation_optimized(phrase: str) -> bool:
     return count_odd <= 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert palindrome_permutation_hash_table("tact coa") is True
     assert palindrome_permutation_hash_table("edmund martin") is False
 

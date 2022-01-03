@@ -41,7 +41,7 @@ def one_edit_away(first: str, second: str) -> bool:
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert one_edit_away("pale", "ple") is True
     assert one_edit_away("pales", "pale") is True
     assert one_edit_away("pale", "bale") is True

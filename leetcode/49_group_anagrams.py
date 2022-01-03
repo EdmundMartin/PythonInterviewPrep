@@ -7,7 +7,7 @@ class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         results = {}
         for word in strs:
-            sorted_word = ''.join(sorted(word[::]))
+            sorted_word = "".join(sorted(word[::]))
             if sorted_word in results:
                 results[sorted_word].append(word)
             else:
@@ -15,7 +15,7 @@ class Solution:
         return [value for value in results.values()]
 
 
-if __name__ == '__main__':
-    test_input = ["eat","tea","tan","ate","nat","bat"]
-    output = [["bat"],["nat","tan"],["ate","eat","tea"]]
+if __name__ == "__main__":
+    test_input = ["eat", "tea", "tan", "ate", "nat", "bat"]
+    output = [["bat"], ["nat", "tan"], ["ate", "eat", "tea"]]
     result = Solution().groupAnagrams(test_input)

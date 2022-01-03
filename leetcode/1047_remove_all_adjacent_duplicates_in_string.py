@@ -1,5 +1,3 @@
-
-
 class Solution:
     def removeDuplicates(self, s: str) -> str:
         output = []
@@ -8,10 +6,10 @@ class Solution:
                 output.pop()
             else:
                 output.append(char)
-        return ''.join(output)
+        return "".join(output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().removeDuplicates("abbaca")
     assert result == "ca"
 

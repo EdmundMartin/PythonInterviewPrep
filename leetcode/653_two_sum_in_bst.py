@@ -11,7 +11,6 @@ class TreeNode:
 # Runtime: 80 ms, faster than 68.09% of Python3 online submissions for Two Sum IV - Input is a BST.
 # Memory Usage: 16.6 MB, less than 72.67% of Python3 online submissions for Two Sum IV - Input is a BST.
 class Solution:
-
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         if not root:
             return False
@@ -29,7 +28,7 @@ class Solution:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(5)
     root.left = TreeNode(3)
     root.left.left = TreeNode(2)

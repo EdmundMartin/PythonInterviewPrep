@@ -15,7 +15,6 @@ class TreeInfo:
 
 
 class Solution:
-
     def recurse_tree(self, root: Optional[TreeNode]) -> TreeInfo:
         if root is None:
             return TreeInfo(0, 0)

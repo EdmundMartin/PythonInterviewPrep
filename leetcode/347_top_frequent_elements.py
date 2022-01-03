@@ -2,7 +2,6 @@ from typing import List
 
 
 class Solution:
-
     def quicksort(self, array):
         if len(array) == 0:
             return []
@@ -36,7 +35,7 @@ class Solution:
         return output
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [1, 1, 1, 2, 2, 3]
     k = 2
     Solution().topKFrequent(nums, k)

@@ -2,7 +2,6 @@ from typing import List
 
 
 class Solution:
-
     def flatten(self, words: List[str]):
         result = ""
         for word in words:

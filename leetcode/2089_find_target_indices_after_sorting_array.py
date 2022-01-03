@@ -4,7 +4,6 @@ from typing import List
 # Runtime: 48 ms, faster than 67.47% of Python3 online submissions for Find Target Indices After Sorting Array.
 # Memory Usage: 14.3 MB, less than 55.10% of Python3 online submissions for Find Target Indices After Sorting Array.
 class Solution:
-
     def find_first(self, nums: List[int], target):
         left = 0
         right = len(nums) - 1

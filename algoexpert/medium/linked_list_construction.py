@@ -93,4 +93,3 @@ class DoublyLinkedList:
             node.next.prev = node.prev
         node.prev = None
         node.next = None
-

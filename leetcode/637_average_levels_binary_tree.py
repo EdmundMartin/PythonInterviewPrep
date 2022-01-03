@@ -21,7 +21,7 @@ class Solution:
             else:
                 levels[level].append(current_node.val)
             if current_node.left:
-                queue.append((current_node.left, level +1))
+                queue.append((current_node.left, level + 1))
             if current_node.right:
                 queue.append((current_node.right, level + 1))
         squashed_levels = []
@@ -30,7 +30,7 @@ class Solution:
         return squashed_levels
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(3)
     root.left = TreeNode(9)
     root.right = TreeNode(20)

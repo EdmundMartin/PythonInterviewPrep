@@ -5,7 +5,6 @@ from typing import List
 
 
 class MyQueue:
-
     def __init__(self):
         self.oldest: List[int] = []
         self.newest: List[int] = []

@@ -7,7 +7,6 @@ into any other data structure.
 
 
 class SimpleStack:
-
     def __init__(self):
         self.stack = []
 
@@ -43,7 +42,7 @@ def sort_stack(stack: SimpleStack) -> SimpleStack:
     return stack
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [8, 1, 4, 7, 6, 5, 11, 18, 8]
     s = SimpleStack()
     s.stack = test_array

@@ -14,7 +14,7 @@ def class_photo(red_heights: List[int], blue_heights: List[int]) -> bool:
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     reds = [5, 8, 1, 3, 4]
     blues = [6, 9, 2, 4, 5]
 

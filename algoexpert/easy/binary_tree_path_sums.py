@@ -19,7 +19,7 @@ def branch_sums(root: BinaryTree) -> List[int]:
     return sums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = BinaryTree(10)
     root.left = BinaryTree(8)
     root.left.left = BinaryTree(6)

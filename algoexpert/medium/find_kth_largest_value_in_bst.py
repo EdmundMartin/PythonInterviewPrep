@@ -2,10 +2,9 @@ from typing import Optional, List
 
 
 class Node:
-
     def __init__(self, value: int):
-        self.left: Optional['Node'] = None
-        self.right: Optional['Node'] = None
+        self.left: Optional["Node"] = None
+        self.right: Optional["Node"] = None
         self.value: int = value
 
 
@@ -59,7 +58,7 @@ def reverse_in_order_with_tree(tree: Node, k: int, tree_info: TreeInfo):
         reverse_in_order_with_tree(tree.left, k, tree_info)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = Node(10)
     root.right = Node(12)
     root.right.right = Node(14)

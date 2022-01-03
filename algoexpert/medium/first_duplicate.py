@@ -24,7 +24,7 @@ def first_duplicate_using_set(array: List[int]) -> int:
     return -1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first_variant = first_duplicate_two_pointers([2, 1, 5, 2, 3, 3, 4])
     second_variant = first_duplicate_using_set([2, 1, 5, 2, 3, 3, 4])
 

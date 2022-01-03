@@ -1,5 +1,3 @@
-
-
 def caesar_cipher(target: str, key: int) -> str:
     cipher = ""
     if key > 26:
@@ -13,6 +11,6 @@ def caesar_cipher(target: str, key: int) -> str:
     return cipher
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = caesar_cipher("edmund", 3)
     assert result == "hgpxqg"

@@ -15,6 +15,6 @@ def bubble_sort(array: List[int]) -> List[int]:
     return array
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = bubble_sort([11, 2, 4, 8, 9, 3, 1, 1, 139, 273, 15])
     assert result == [1, 1, 2, 3, 4, 8, 9, 11, 15, 139, 273]

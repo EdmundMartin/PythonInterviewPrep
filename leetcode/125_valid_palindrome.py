@@ -21,10 +21,10 @@ class Solution:
             as_list[i], as_list[j] = as_list[j], as_list[i]
             i += 1
             j -= 1
-        return ''.join(as_list)
+        return "".join(as_list)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_one = "A man, a plan, a canal: Panama"
     assert Solution().isPalindrome(test_one) is True
 

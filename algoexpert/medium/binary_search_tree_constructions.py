@@ -2,13 +2,12 @@ from typing import Optional
 
 
 class BST:
-
     def __init__(self, value: int):
         self.value = value
-        self.left: Optional['BST'] = None
-        self.right: Optional['BST'] = None
+        self.left: Optional["BST"] = None
+        self.right: Optional["BST"] = None
 
-    def insert(self, value: int) -> 'BST':
+    def insert(self, value: int) -> "BST":
         current_node = self
         while True:
             if value < current_node.value:
@@ -42,7 +41,7 @@ class BST:
             current_node = current_node.left
         return current_node.value
 
-    def remove(self, value: int, parent_node: Optional['BST'] = None):
+    def remove(self, value: int, parent_node: Optional["BST"] = None):
         current_node = self
         while current_node is not None:
             if value < current_node.value:
@@ -68,8 +67,16 @@ class BST:
                     else:
                         current_node.value = None
                 elif parent_node.left == current_node:
-                    parent_node.left = current_node.left if current_node.left is not None else current_node.right
+                    parent_node.left = (
+                        current_node.left
+                        if current_node.left is not None
+                        else current_node.right
+                    )
                 elif parent_node.right == current_node:
-                    parent_node.right = current_node.left if current_node.left is not None else current_node.right
+                    parent_node.right = (
+                        current_node.left
+                        if current_node.left is not None
+                        else current_node.right
+                    )
                 break
         return self

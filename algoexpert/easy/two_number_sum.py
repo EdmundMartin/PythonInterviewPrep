@@ -11,7 +11,7 @@ def two_sum(array: List[int], target_sum: int) -> List[int]:
     return []
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array: List[int] = [3, 5, -4, 8, 11, 1, -1, 6]
     test_target: int = 10
     result = two_sum(test_array, test_target)

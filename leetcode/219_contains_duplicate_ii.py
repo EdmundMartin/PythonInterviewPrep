@@ -3,7 +3,6 @@ from collections import defaultdict
 
 
 class Solution:
-
     def check_abs(self, indexes: List[int], k: int):
         if len(indexes) == 1:
             return False
@@ -25,7 +24,6 @@ class Solution:
 
 
 class SolutionFaster:
-
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         mapping = {}
         for idx, num in enumerate(nums):
@@ -36,7 +34,7 @@ class SolutionFaster:
         return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = [1, 2, 3, 1]
     result = Solution().containsNearbyDuplicate(test_input, 3)
     assert result is True

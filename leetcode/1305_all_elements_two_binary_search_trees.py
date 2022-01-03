@@ -9,7 +9,6 @@ class TreeNode:
 
 
 class Solution:
-
     def in_order_traverse(self, node: TreeNode, values):
         if not node:
             return

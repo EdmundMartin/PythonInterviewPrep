@@ -1,4 +1,3 @@
-
 class Solution:
     def fib(self, n: int) -> int:
         if n <= 1:

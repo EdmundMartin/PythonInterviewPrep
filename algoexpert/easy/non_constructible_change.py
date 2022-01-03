@@ -13,7 +13,7 @@ def non_constructible_change(coins: List[int]) -> int:
     return current_change_created + 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     coins = [5, 7, 1, 1, 2, 3, 22]
     result = non_constructible_change(coins)
     assert result == 20

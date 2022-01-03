@@ -43,7 +43,7 @@ class Solution:
         return all_levels
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(1)
     root.left = TreeNode(2)
     root.right = TreeNode(3)

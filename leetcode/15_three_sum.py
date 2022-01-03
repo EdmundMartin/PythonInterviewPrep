@@ -25,7 +25,7 @@ class Solution:
         return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [-1, 0, 1, 2, -1, -4]
     result = Solution().threeSum(test_array)
     assert result == [[-1, -1, 2], [-1, 0, 1]]

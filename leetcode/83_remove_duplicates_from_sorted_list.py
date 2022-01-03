@@ -37,7 +37,7 @@ def linked_list_as_list(head: ListNode) -> List[int]:
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     first = ListNode(1)
     first.next = ListNode(1)
     first.next.next = ListNode(2)

@@ -2,7 +2,6 @@ from typing import Optional, List, Any
 
 
 class SinglyLinkedNode:
-
     def __init__(self, value: int):
         self.value = value
         self.next: Optional[SinglyLinkedNode] = None

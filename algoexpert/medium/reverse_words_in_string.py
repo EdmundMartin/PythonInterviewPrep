@@ -24,6 +24,6 @@ def reverse_words_in_string(string: str) -> str:
     return "".join(characters)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = reverse_words_in_string("edmund is the best")
     assert result == "best the is edmund"

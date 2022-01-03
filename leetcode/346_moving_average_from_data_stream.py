@@ -1,7 +1,4 @@
-
-
 class MovingAverage:
-
     def __init__(self, size: int):
         self.size = size
         self.window = []
@@ -15,7 +12,7 @@ class MovingAverage:
         return sum(self.window) / min(len(self.window), self.size)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test = [1, 10, 3, 5]
     m = MovingAverage(3)
     for t in test:

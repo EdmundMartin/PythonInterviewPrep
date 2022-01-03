@@ -18,7 +18,7 @@ class SparseVector:
         self.vector_hash_map = process_sparse_vector(nums)
 
     # Return the dotProduct of two sparse vectors
-    def dotProduct(self, vec: 'SparseVector') -> int:
+    def dotProduct(self, vec: "SparseVector") -> int:
         total = 0
         for idx in range(self.len):
             first = self.vector_hash_map.get(idx)
@@ -27,5 +27,5 @@ class SparseVector:
             second = vec.vector_hash_map.get(idx)
             if not second:
                 continue
-            total += (first * second)
+            total += first * second
         return total

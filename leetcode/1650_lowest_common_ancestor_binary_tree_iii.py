@@ -1,5 +1,3 @@
-
-
 class Node:
     def __init__(self, val):
         self.val = val
@@ -9,8 +7,7 @@ class Node:
 
 
 class Solution:
-
-    def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
+    def lowestCommonAncestor(self, p: "Node", q: "Node") -> "Node":
 
         results = {}
         while p:

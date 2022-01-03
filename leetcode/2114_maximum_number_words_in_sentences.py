@@ -5,4 +5,4 @@ from typing import List
 # Memory Usage: 14.2 MB, less than 89.60% of Python3 online submissions for Maximum Number of Words Found in Sentences.
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
-        return max([len(s.split(' ')) for s in sentences])
+        return max([len(s.split(" ")) for s in sentences])

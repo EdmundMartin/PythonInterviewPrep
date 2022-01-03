@@ -2,7 +2,6 @@ from typing import List
 
 
 class MinHeap:
-
     def __init__(self, array: List[int]):
         self.heap = self.build_heap(array)
 
@@ -15,7 +14,9 @@ class MinHeap:
     def sift_down(self, current_idx, end_idx, heap):
         child_one_idx = current_idx * 2 + 1
         while child_one_idx <= end_idx:
-            child_two_idx = current_idx * 2 + 2 if current_idx * 2 + 2 <= end_idx else -1
+            child_two_idx = (
+                current_idx * 2 + 2 if current_idx * 2 + 2 <= end_idx else -1
+            )
             if child_two_idx != -1 and heap[child_two_idx] < heap[child_one_idx]:
                 idx_swap = child_two_idx
             else:

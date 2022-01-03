@@ -1,4 +1,3 @@
-
 class DoubleLinkedNode:
     def __init__(self, value: str):
         self.value = value
@@ -7,7 +6,6 @@ class DoubleLinkedNode:
 
 
 class BrowserHistory:
-
     def __init__(self, homepage: str):
         self.node = DoubleLinkedNode(homepage)
 
@@ -26,7 +24,7 @@ class BrowserHistory:
         self.node = current_node
         return current_node.value
 
-    def forward(self, steps:int) -> str:
+    def forward(self, steps: int) -> str:
         current_node = self.node
         k = 0
         while current_node.next and k < steps:
@@ -36,7 +34,7 @@ class BrowserHistory:
         return current_node.value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     history = BrowserHistory("leetcode.com")
     history.visit("google.com")
     history.visit("facebook.com")

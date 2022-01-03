@@ -30,7 +30,7 @@ def are_equal(first: SinglyLinkedNode, second: SinglyLinkedNode) -> bool:
     return first is None and second is None
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     palindrome = linked_list_from_list([3, 7, 3])
     not_palindrome = linked_list_from_list([3, 7, 3, 8])
     assert is_palindrome(palindrome) is True

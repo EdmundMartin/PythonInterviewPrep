@@ -21,6 +21,6 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().frequencySort("tree")
     print(result)

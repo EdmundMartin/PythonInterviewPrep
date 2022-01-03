@@ -12,6 +12,10 @@ def reverse_sublist(l: ListNode, start: int, finish: int) -> Optional[ListNode]:
     sublist_iter = sublist_head.next
     for _ in range(finish - start):
         temp = sublist_iter.next
-        sublist_iter.next, temp.next, sublist_head.next = temp.next, sublist_head.next, temp
+        sublist_iter.next, temp.next, sublist_head.next = (
+            temp.next,
+            sublist_head.next,
+            temp,
+        )
 
     return dummy_head.next

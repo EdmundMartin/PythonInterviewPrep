@@ -12,7 +12,7 @@ class TreeNode:
 # Memory Usage: 16.1 MB, less than 59.29% of Python3 online submissions for Closest Binary Search Tree Value.
 class Solution:
     def closestValue(self, root: Optional[TreeNode], target: float) -> int:
-        diff = float('inf')
+        diff = float("inf")
         result = None
         queue = [root]
         while queue:
@@ -30,7 +30,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     root = TreeNode(4)
     root.left = TreeNode(2)
     root.right = TreeNode(5)

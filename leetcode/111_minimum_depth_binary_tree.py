@@ -12,7 +12,7 @@ class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
-        min_depth = float('inf')
+        min_depth = float("inf")
         queue = [(root, 1)]
         while queue:
             current_node, depth = queue.pop(0)

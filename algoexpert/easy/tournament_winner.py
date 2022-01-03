@@ -13,12 +13,8 @@ def tournament_winner(competitions: List[List[str]], results: List[int]):
     return max(scores, key=scores.get)
 
 
-if __name__ == '__main__':
-    test_competitions = [
-        ["HTML", "C#"],
-        ["C#", "Python"],
-        ["Python", "HTML"]
-    ]
+if __name__ == "__main__":
+    test_competitions = [["HTML", "C#"], ["C#", "Python"], ["Python", "HTML"]]
     test_results = [0, 0, 1]
     result = tournament_winner(test_competitions, test_results)
     assert result == "Python"

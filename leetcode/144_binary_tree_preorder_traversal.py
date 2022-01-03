@@ -11,7 +11,6 @@ class TreeNode:
 # Runtime: 32 ms, faster than 59.51% of Python3 online submissions for Binary Tree Preorder Traversal.
 # Memory Usage: 14.3 MB, less than 46.06% of Python3 online submissions for Binary Tree Preorder Traversal.
 class Solution:
-
     def pre_order_helper(self, node: Optional[TreeNode], values: List[int]) -> None:
         if not node:
             return

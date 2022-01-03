@@ -37,7 +37,7 @@ class Solution:
         return neighbors
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     grid = [[0, 1, 0, 0], [1, 1, 1, 0], [0, 1, 0, 0], [1, 1, 0, 0]]
 
     result = Solution().islandPerimeter(grid)

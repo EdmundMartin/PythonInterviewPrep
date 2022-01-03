@@ -19,7 +19,7 @@ def is_unique(target: str) -> bool:
     return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unique_string = "aedfghjkl"
     duplicate_string = "abcdeabd"
     assert is_unique(unique_string) is True

@@ -1,5 +1,3 @@
-
-
 def is_palindrome(target: str) -> bool:
     back_idx = len(target) - 1
     for forward_idx, _ in enumerate(target):
@@ -10,6 +8,6 @@ def is_palindrome(target: str) -> bool:
         back_idx -= 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert is_palindrome("tat") is True
     assert is_palindrome("bobobs") is False

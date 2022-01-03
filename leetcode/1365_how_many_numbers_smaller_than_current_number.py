@@ -12,7 +12,7 @@ class Solution:
         return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [8, 1, 2, 2, 3]
     result = Solution().smallerNumbersThanCurrent(nums)
     assert result == [4, 0, 1, 1, 3]

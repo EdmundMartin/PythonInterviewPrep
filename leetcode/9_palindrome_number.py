@@ -1,5 +1,3 @@
-
-
 class Solution:
     def isPalindrome(self, x: int) -> bool:
 
@@ -15,6 +13,6 @@ class Solution:
         return x == reverted_number or x == reverted_number // 10
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().isPalindrome(121)
     print(result)

@@ -20,7 +20,7 @@ class Solution:
         return count_odd <= 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().canPermutePalindrome("ccos")
     assert result is False
 

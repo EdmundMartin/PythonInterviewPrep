@@ -1,10 +1,15 @@
 from typing import Optional
 
-from elementsProgrammingInterview.ch7_linked_lists.linked_list_bootcamp import (ListNode, linked_list_from_list,
-                                                                                linked_list_to_python_list)
+from elementsProgrammingInterview.ch7_linked_lists.linked_list_bootcamp import (
+    ListNode,
+    linked_list_from_list,
+    linked_list_to_python_list,
+)
 
 
-def merge_two_sorted_lists(l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+def merge_two_sorted_lists(
+    l1: Optional[ListNode], l2: Optional[ListNode]
+) -> Optional[ListNode]:
     dummy_head = tail = ListNode()
 
     while l1 and l2:
@@ -19,9 +24,27 @@ def merge_two_sorted_lists(l1: Optional[ListNode], l2: Optional[ListNode]) -> Op
     return dummy_head.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_one = linked_list_from_list([1, 10, 20, 30, 40, 45, 50, 55, 60])
     list_two = linked_list_from_list([1, 8, 18, 33, 43, 52, 58, 63])
 
     result = merge_two_sorted_lists(list_one, list_two)
-    assert linked_list_to_python_list(result) == [1, 1, 8, 10, 18, 20, 30, 33, 40, 43, 45, 50, 52, 55, 58, 60, 63]
+    assert linked_list_to_python_list(result) == [
+        1,
+        1,
+        8,
+        10,
+        18,
+        20,
+        30,
+        33,
+        40,
+        43,
+        45,
+        50,
+        52,
+        55,
+        58,
+        60,
+        63,
+    ]

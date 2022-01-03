@@ -1,5 +1,9 @@
 from typing import Optional
-from algoexpert.utils.linked_list import linked_list_to_python_list, linked_list_from_list, LinkedList
+from algoexpert.utils.linked_list import (
+    linked_list_to_python_list,
+    linked_list_from_list,
+    LinkedList,
+)
 
 
 def remove_duplicates_from_linked_list(head: LinkedList) -> LinkedList:
@@ -30,7 +34,7 @@ def remove_duplicates_from_linked_list_alternate(head: LinkedList) -> LinkedList
     return head
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_array = [1, 2, 3, 4, 4, 5, 5, 6, 6, 8, 9]
     expected_array = [1, 2, 3, 4, 5, 6, 8, 9]
     linked_list = linked_list_from_list(test_array)

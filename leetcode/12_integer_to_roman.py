@@ -1,5 +1,3 @@
-
-
 class Solution:
     def intToRoman(self, num: int) -> str:
         mapping = [
@@ -15,7 +13,7 @@ class Solution:
             (9, "IX"),
             (5, "V"),
             (4, "IV"),
-            (1, "I")
+            (1, "I"),
         ]
         roman_digits = []
         for value, symbol in mapping:

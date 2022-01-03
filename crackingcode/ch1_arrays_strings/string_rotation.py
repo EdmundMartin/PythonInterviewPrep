@@ -20,7 +20,7 @@ def is_rotation(first: str, second: str) -> bool:
     return False
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     original = "waterbottle"
     rotation = "erbottlewat"
     assert is_rotation(original, rotation) is True
