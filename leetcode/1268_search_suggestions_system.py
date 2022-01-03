@@ -38,11 +38,9 @@ class Solution:
         trie = Trie()
         for product in products:
             trie.insert(product)
-        searched = []
         output = []
         for idx in range(1, len(searchWord) + 1):
             res = searchWord[0:idx]
-            searched.append(res)
             prefix_result = trie.words_beginning_with(res)
             if len(prefix_result) > 3:
                 prefix_result = prefix_result[:3]
