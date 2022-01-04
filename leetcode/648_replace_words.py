@@ -2,7 +2,6 @@ from typing import List
 
 
 class Trie:
-
     def __init__(self):
         self._trie = {}
         self._end = "END"
@@ -32,7 +31,7 @@ class Solution:
         t = Trie()
         for item in dictionary:
             t.add_word(item)
-        all_words = sentence.split(' ')
+        all_words = sentence.split(" ")
         for idx, word in enumerate(all_words):
             exists, replacement = t.prefix_in_trie(word)
             if exists:
@@ -40,8 +39,10 @@ class Solution:
         return " ".join(all_words)
 
 
-if __name__ == '__main__':
-    res = Solution().replaceWords(["cat", "bat", "rat"], "the cattle was rattled by the battery")
+if __name__ == "__main__":
+    res = Solution().replaceWords(
+        ["cat", "bat", "rat"], "the cattle was rattled by the battery"
+    )
     print(res)
 
     res = Solution().replaceWords(["a", "b", "c"], "aadsfasf absbs bbab cadsfafs")

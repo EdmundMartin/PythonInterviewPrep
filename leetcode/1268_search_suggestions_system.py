@@ -2,7 +2,6 @@ from typing import List
 
 
 class Trie:
-
     def __init__(self):
         self._trie = {}
         self._end = "END"
@@ -27,14 +26,16 @@ class Trie:
 
     def _iterate_over_node(self, node, words):
         for key in node.keys():
-            if key == 'END':
+            if key == "END":
                 words.append(node[key])
             else:
                 self._iterate_over_node(node[key], words)
 
 
 class Solution:
-    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
+    def suggestedProducts(
+        self, products: List[str], searchWord: str
+    ) -> List[List[str]]:
         trie = Trie()
         for product in products:
             trie.insert(product)
@@ -48,8 +49,10 @@ class Solution:
         return output
 
 
-if __name__ == '__main__':
-    result = Solution().suggestedProducts(["mobile", "mouse", "moneypot", "monitor", "mousepad"], "mouse")
+if __name__ == "__main__":
+    result = Solution().suggestedProducts(
+        ["mobile", "mouse", "moneypot", "monitor", "mousepad"], "mouse"
+    )
     print(result[0])
     print(result[1])
     print(result[2])

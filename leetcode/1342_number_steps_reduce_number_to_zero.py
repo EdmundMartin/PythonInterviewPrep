@@ -1,5 +1,3 @@
-
-
 class Solution:
     def numberOfSteps(self, num: int) -> int:
         steps = 0
@@ -12,7 +10,7 @@ class Solution:
         return steps
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().numberOfSteps(14)
     print(result)
 

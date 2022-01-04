@@ -16,7 +16,7 @@ class Solution:
         return len(pairs)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().numIdenticalPairs([1, 2, 3, 1, 1, 3])
     assert result == 4
 

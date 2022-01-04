@@ -1,5 +1,3 @@
-
-
 def sunset_views(buildings, direction):
     # Write your code here.
     if direction == "WEST":
@@ -8,7 +6,7 @@ def sunset_views(buildings, direction):
     else:
         idx = len(buildings) - 1
         iterator = -1
-    max_height = float('-inf')
+    max_height = float("-inf")
     sunset_idxes = []
     while idx >= 0 and idx < len(buildings):
         if buildings[idx] > max_height:
@@ -20,7 +18,7 @@ def sunset_views(buildings, direction):
     return sunset_idxes
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     towers = [3, 5, 4, 4, 3, 1, 3, 2]
     direction = "EAST"
     result = sunset_views(towers, direction)

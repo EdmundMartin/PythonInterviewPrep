@@ -1,6 +1,4 @@
-
 class MRUQueue:
-
     def __init__(self, n: int):
         self.values = [i for i in range(1, n + 1)]
 
@@ -11,5 +9,5 @@ class MRUQueue:
         return value
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue = MRUQueue(8)

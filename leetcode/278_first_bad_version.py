@@ -1,5 +1,3 @@
-
-
 def isBadVersion(version) -> bool:
     if version >= 1:
         return True
@@ -23,6 +21,6 @@ class Solution:
         return binary_search(n)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     res = Solution().firstBadVersion(3)
     print(res)

@@ -13,7 +13,7 @@ class Solution:
         return target
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     res = Solution().createTargetArray([0, 1, 2, 3, 4], [0, 1, 2, 2, 1])
     print(res)

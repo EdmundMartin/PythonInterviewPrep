@@ -1,12 +1,9 @@
-
-
 # Runtime: 181 ms, faster than 58.35% of Python3 online submissions for Implement Trie (Prefix Tree).
 # Memory Usage: 27.7 MB, less than 90.88% of Python3 online submissions for Implement Trie (Prefix Tree).
 class Trie:
-
     def __init__(self):
         self._trie = {}
-        self._end = 'END'
+        self._end = "END"
 
     def insert(self, word: str) -> None:
         node = self._trie
@@ -33,7 +30,7 @@ class Trie:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     trie = Trie()
     trie.insert("apple")
     result = trie.search("apple")

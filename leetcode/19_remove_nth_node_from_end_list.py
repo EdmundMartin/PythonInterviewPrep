@@ -27,7 +27,7 @@ class Solution:
         return dummy.next
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     head = linked_list_from_list([1, 2, 3, 4, 5])
     result = Solution().removeNthFromEnd(head, 2)
     print(linked_list_to_python_list(result))

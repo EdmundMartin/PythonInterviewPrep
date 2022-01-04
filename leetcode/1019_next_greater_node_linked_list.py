@@ -1,6 +1,7 @@
 from typing import Optional, List
 from leetcode.utils import linked_list_from_list
 
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -52,7 +53,7 @@ class Solution:
         return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_input = linked_list_from_list([2, 1, 5])
     result = Solution().nextLargerNodes(test_input)
     print(result)

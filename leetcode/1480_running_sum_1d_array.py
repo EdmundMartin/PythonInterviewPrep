@@ -12,7 +12,7 @@ class Solution:
         return sums
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     result = Solution().runningSum([1, 2, 3, 4])
     print(result)
 
