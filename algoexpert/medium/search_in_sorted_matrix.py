@@ -1,4 +1,4 @@
-from typing import List, Tuple
+from typing import List
 
 
 def search_in_sorted_matrix(grid: List[List[int]], target: int) -> List[int]:
