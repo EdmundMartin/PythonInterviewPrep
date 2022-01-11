@@ -8,7 +8,7 @@ class Solution:
         nums.sort()
         i = 0
         j = len(nums) - 1
-        current_max = float('-inf')
+        current_max = float("-inf")
         while i < j:
             current_sum = nums[i] + nums[j]
             if current_sum < k:
@@ -16,10 +16,10 @@ class Solution:
                 i += 1
             else:
                 j -= 1
-        return -1 if current_max == float('-inf') else current_max
+        return -1 if current_max == float("-inf") else current_max
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     nums = [34, 23, 1, 24, 75, 33, 54, 8]
     k = 60
     result = Solution().twoSumLessThanK(nums, k)

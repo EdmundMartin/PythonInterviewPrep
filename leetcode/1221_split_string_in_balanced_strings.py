@@ -1,4 +1,3 @@
-
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
         balance = 0

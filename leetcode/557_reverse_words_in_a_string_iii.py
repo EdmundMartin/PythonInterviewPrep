@@ -17,5 +17,5 @@ class Solution:
         for word in words:
             word_list = list(word)
             reverse_in_place(word_list)
-            result.append(''.join(word_list))
+            result.append("".join(word_list))
         return "".join(result)

@@ -20,10 +20,7 @@ class Solution:
         return count
 
 
-if __name__ == '__main__':
-    test_input = [[4, 3, 2, -1],
-                  [3, 2, 1, -1],
-                  [1, 1, -1, -2],
-                  [-1, -1, -2, -3]]
+if __name__ == "__main__":
+    test_input = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]]
     result = Solution().countNegatives(test_input)
     print(result)

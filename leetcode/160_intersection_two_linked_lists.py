@@ -8,7 +8,9 @@ class ListNode:
 
 
 class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+    def getIntersectionNode(
+        self, headA: ListNode, headB: ListNode
+    ) -> Optional[ListNode]:
         first_pointer = headA
         second_pointer = headB
 

@@ -15,7 +15,7 @@ def max_tree(array: List[int]):
     max_idx = array.index(max_value)
     bst = TreeNode(max_value)
     bst.left = max_tree(array[:max_idx])
-    bst.right = max_tree(array[max_idx + 1:])
+    bst.right = max_tree(array[max_idx + 1 :])
     return bst
 
 
@@ -24,7 +24,7 @@ class Solution:
         return max_tree(nums)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_nums = [3, 2, 1, 6, 0, 5]
 
     root = Solution().constructMaximumBinaryTree(test_nums)

@@ -12,5 +12,5 @@ class Solution:
         return len(all_chars) == 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     Solution().checkIfPangram("hello")

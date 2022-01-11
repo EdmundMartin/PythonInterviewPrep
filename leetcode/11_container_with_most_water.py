@@ -18,7 +18,7 @@ class Solution:
         return max_area
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     test_heights = [1, 8, 6, 2, 5, 4, 8, 3, 7]
     result = Solution().maxArea(test_heights)
     assert result == 49

@@ -15,7 +15,7 @@ class Solution:
                 i += 1
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     numbers = [2, 7, 11, 15]
     result = Solution().twoSum(numbers, 9)
     assert result == [1, 2]

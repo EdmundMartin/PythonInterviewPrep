@@ -2,7 +2,9 @@ from typing import List
 
 
 class Solution:
-    def areSentencesSimilar(self, sentence1: List[str], sentence2: List[str], similarPairs: List[List[str]]) -> bool:
+    def areSentencesSimilar(
+        self, sentence1: List[str], sentence2: List[str], similarPairs: List[List[str]]
+    ) -> bool:
         if len(sentence1) != len(sentence2):
             return False
         pairings = {}
@@ -26,7 +28,7 @@ class Solution:
         return True
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sent_one = ["great", "acting", "skills"]
     sent_two = ["fine", "drama", "talent"]
     pairs = [["great", "fine"], ["drama", "acting"], ["skills", "talent"]]

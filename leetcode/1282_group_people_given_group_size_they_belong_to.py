@@ -37,7 +37,7 @@ class SolutionFaster:
         return results
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     group_sizes = [3, 3, 3, 3, 3, 1, 3]
     result = Solution().groupThePeople(group_sizes)
     print(result)

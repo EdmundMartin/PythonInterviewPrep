@@ -1,5 +1,3 @@
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -12,4 +10,4 @@ class Solution:
         while head:
             nums.append(head.val)
             head = head.next
-        return int(''.join([str(num) for num in nums]), 2)
+        return int("".join([str(num) for num in nums]), 2)

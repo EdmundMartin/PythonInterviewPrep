@@ -58,7 +58,7 @@ class SolutionStack:
                 result = max(result, len(stack))
             else:
                 stack.append(char)
-                stack = stack[stack.index(char) + 1:]
+                stack = stack[stack.index(char) + 1 :]
         return result
 
 

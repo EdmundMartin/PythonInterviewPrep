@@ -11,11 +11,10 @@ class TreeNode:
 # Runtime: 32 ms, faster than 67.79% of Python3 online submissions for Sum Root to Leaf Numbers.
 # Memory Usage: 14.4 MB, less than 18.63% of Python3 online submissions for Sum Root to Leaf Numbers.
 class Solution:
-
     def sum_paths(self, paths: List[List[int]]):
         total = 0
         for path in paths:
-            path_as_num = int(''.join([str(p) for p in path]))
+            path_as_num = int("".join([str(p) for p in path]))
             total += path_as_num
         return total
 

@@ -1,5 +1,3 @@
-
-
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -8,7 +6,6 @@ class TreeNode:
 
 
 class Solution:
-
     def in_order_traverse(self, root, values):
         if not root:
             return
